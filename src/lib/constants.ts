@@ -10,20 +10,20 @@ export const SHOP_CONFIG = {
   whatsapp: process.env.NEXT_PUBLIC_SHOP_WHATSAPP || "+91 98400 12345",
   whatsappLink: process.env.NEXT_PUBLIC_SHOP_WHATSAPP 
     ? `https://wa.me/${process.env.NEXT_PUBLIC_SHOP_WHATSAPP.replace(/[^0-9]/g, "")}`
-    : "https://wa.me/919840012345",
-  email: process.env.NEXT_PUBLIC_SHOP_EMAIL || "contact@sreeanbujewellers.com",
+    : "https://wa.me/918072248712",
+  email: process.env.NEXT_PUBLIC_SHOP_EMAIL || "contact.saj@gmail.com",
   
   // Address & Hours
   address: {
-    line1: process.env.NEXT_PUBLIC_SHOP_ADDRESS_1 || "Main Bazaar Road, Near Clock Tower",
+    line1: process.env.NEXT_PUBLIC_SHOP_ADDRESS_1 || "Bus stand, Pudupalayam, Main Road",
     city: process.env.NEXT_PUBLIC_SHOP_CITY || "Tamil Nadu",
-    pincode: process.env.NEXT_PUBLIC_SHOP_PINCODE || "600001",
+    pincode: process.env.NEXT_PUBLIC_SHOP_PINCODE || "606705",
     country: "India",
   },
   
   businessHours: {
-    weekdays: "Monday – Saturday: 9:30 AM – 9:00 PM",
-    sunday: "Sunday: 10:00 AM – 8:00 PM",
+    weekdays: "Monday – Saturday: 9:30 AM – 8:00 PM",
+    sunday: "Sunday: 9:00 AM – 1:00 PM",
     note: "Open on all festive days & auspicious muhurtham occasions",
   },
 

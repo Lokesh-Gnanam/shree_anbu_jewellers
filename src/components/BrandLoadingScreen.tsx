@@ -84,24 +84,20 @@ export default function BrandLoadingScreen({ onComplete }: BrandLoadingScreenPro
               />
             </motion.div>
 
-            {/* Typography Section */}
+            {/* The Only Text Image at Bottom */}
             <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.6, ease: "easeOut" }}
-              className="mt-6 text-center"
+              initial={{ opacity: 0, y: 14, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.55, ease: "easeOut" }}
+              className="relative w-64 sm:w-80 h-20 sm:h-24 mt-4 drop-shadow-[0_0_25px_rgba(223,183,108,0.45)]"
             >
-              <h1 className="font-cinzel text-2xl sm:text-3xl tracking-[0.28em] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#F3E196] via-[#ECC875] to-[#DFB76C] drop-shadow-sm">
-                SREE ANBU
-              </h1>
-              
-              <div className="flex items-center justify-center gap-3 mt-2">
-                <span className="w-8 h-[1px] bg-gradient-to-r from-transparent to-[#DFB76C]/60" />
-                <p className="font-sans text-[10px] sm:text-[11px] tracking-[0.35em] text-[#E7DBEF]/85 uppercase font-medium">
-                  Jewellers & Finance Shop
-                </p>
-                <span className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#DFB76C]/60" />
-              </div>
+              <Image
+                src="/images/logo/brand-text.png"
+                alt="Sree Anbu Jewellers & Finance Shop"
+                fill
+                priority
+                className="object-contain"
+              />
             </motion.div>
 
             {/* Subtle Progress Shimmer Line */}

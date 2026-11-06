@@ -53,25 +53,16 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             {/* Logo on Left */}
             <Link
               href="#home"
-              className="group flex items-center gap-3 transition-transform duration-300 hover:scale-[1.02]"
+              className="group flex items-center transition-transform duration-300 hover:scale-[1.02]"
             >
-              <div className="relative w-10 h-10 sm:w-12 sm:h-12 shrink-0 drop-shadow-[0_2px_8px_rgba(198,146,60,0.35)]">
+              <div className="relative h-11 sm:h-13 w-44 sm:w-56 drop-shadow-[0_2px_8px_rgba(198,146,60,0.35)]">
                 <Image
-                  src="/images/logo/emblem.png"
-                  alt="Sree Anbu Emblem"
+                  src="/images/logo/navbar-logo.png"
+                  alt="Sree Anbu Jewellers & Finance Shop"
                   fill
                   priority
-                  className="object-contain"
+                  className="object-contain object-left"
                 />
-              </div>
-
-              <div className="flex flex-col">
-                <span className="font-cinzel text-lg sm:text-xl font-bold tracking-[0.16em] text-[#49225B] leading-none group-hover:text-[#6E3482] transition-colors">
-                  SREE ANBU
-                </span>
-                <span className="font-sans text-[8.5px] sm:text-[9.5px] tracking-[0.24em] font-medium text-[#6E3482]/90 uppercase mt-1">
-                  Jewellers & Finance
-                </span>
               </div>
             </Link>
 
@@ -155,23 +146,13 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
               <div>
                 {/* Drawer Header */}
                 <div className="flex items-center justify-between pb-4 border-b border-[#E7DBEF]">
-                  <div className="flex items-center gap-2.5">
-                    <div className="relative w-9 h-9">
-                      <Image
-                        src="/images/logo/emblem.png"
-                        alt="Sree Anbu Emblem"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div>
-                      <p className="font-cinzel text-base font-bold text-[#49225B] leading-none">
-                        SREE ANBU
-                      </p>
-                      <p className="text-[8px] tracking-[0.2em] text-[#6E3482] uppercase mt-0.5">
-                        Jewellers & Finance
-                      </p>
-                    </div>
+                  <div className="relative h-10 w-40">
+                    <Image
+                      src="/images/logo/navbar-logo.png"
+                      alt="Sree Anbu Jewellers & Finance Shop"
+                      fill
+                      className="object-contain object-left"
+                    />
                   </div>
                   <button
                     onClick={() => setMobileMenuOpen(false)}

@@ -33,23 +33,13 @@ export default function Footer() {
           
           {/* Brand Info (Cols 1-4) */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="relative w-12 h-12 shrink-0 drop-shadow-[0_0_12px_rgba(223,183,108,0.5)]">
-                <Image
-                  src="/images/logo/emblem.png"
-                  alt="Sree Anbu Golden Emblem"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div>
-                <span className="font-cinzel text-xl font-bold tracking-[0.18em] text-[#F3E196] block leading-none">
-                  SREE ANBU
-                </span>
-                <span className="font-sans text-[9px] tracking-[0.26em] uppercase text-[#E7DBEF]/80 block mt-1">
-                  Jewellers &amp; Finance Shop
-                </span>
-              </div>
+            <div className="relative h-12 sm:h-14 w-48 sm:w-60 drop-shadow-[0_0_15px_rgba(223,183,108,0.45)]">
+              <Image
+                src="/images/logo/navbar-logo.png"
+                alt="Sree Anbu Jewellers & Finance Shop"
+                fill
+                className="object-contain object-left"
+              />
             </div>
 
             <p className="text-xs text-[#E7DBEF]/80 leading-relaxed max-w-sm pt-2">
