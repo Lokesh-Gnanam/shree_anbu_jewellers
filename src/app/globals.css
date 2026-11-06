@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #49225B;
+  --secondary: #6E3482;
+  --accent: #A56ABD;
+  --surface: #E7DBEF;
+  --bg-brand: #F5EBFA;
+  --gold-metallic: #C6923C;
+  --gold-light: #F3E196;
+  --gold-dark: #8F641E;
+  --dark-text: #21152A;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background-color: #F5EBFA;
+  color: #21152A;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #F5EBFA;
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5EBFA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6E3482;
+  border-radius: 9999px;
+  border: 2px solid #F5EBFA;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #49225B;
+}
+
+/* Typography Utility */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Metallic Gold Text Gradient */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #ECC875 0%, #C6923C 35%, #F3E196 60%, #8F641E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, #ECC875 0%, #C6923C 50%, #8F641E 100%) 1;
+}
+
+/* Glassmorphism Styles */
+.glass-purple {
+  background: rgba(73, 34, 91, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(223, 183, 108, 0.2);
+}
+
+.glass-nav-scrolled {
+  background: rgba(245, 235, 250, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(110, 52, 130, 0.12);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(231, 219, 239, 0.8);
+}
+
+.glass-gold-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(247, 237, 210, 0.4) 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(198, 146, 60, 0.25);
+}
+
+/* Subtle Shimmer Effect */
+@keyframes shimmerAnim {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-gold-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-gold-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 243, 184, 0.25), transparent);
+  animation: shimmerAnim 3.5s infinite;
+}
+
+/* Respect user preferences for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
