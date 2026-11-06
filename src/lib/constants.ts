@@ -5,13 +5,13 @@ export const SHOP_CONFIG = {
   subTagline: "Discover timeless jewellery, trusted gold services and exceptional craftsmanship at Sree Anbu Jewellers & Finance Shop.",
   
   // Configurable contact details
-  phone: process.env.NEXT_PUBLIC_SHOP_PHONE || "+91 98400 12345",
-  phoneDisplay: process.env.NEXT_PUBLIC_SHOP_PHONE_DISPLAY || "+91 98400 12345",
-  whatsapp: process.env.NEXT_PUBLIC_SHOP_WHATSAPP || "+91 98400 12345",
+  phone: process.env.NEXT_PUBLIC_SHOP_PHONE || "+91 90429 51609",
+  phoneDisplay: process.env.NEXT_PUBLIC_SHOP_PHONE_DISPLAY || "+91 90429 51609",
+  whatsapp: process.env.NEXT_PUBLIC_SHOP_WHATSAPP || "+91 80722 48712",
   whatsappLink: process.env.NEXT_PUBLIC_SHOP_WHATSAPP 
     ? `https://wa.me/${process.env.NEXT_PUBLIC_SHOP_WHATSAPP.replace(/[^0-9]/g, "")}`
     : "https://wa.me/918072248712",
-  email: process.env.NEXT_PUBLIC_SHOP_EMAIL || "contact.saj@gmail.com",
+  email: process.env.NEXT_PUBLIC_SHOP_EMAIL || "chat.shreeanbujewellers@gmail.com",
   
   // Address & Hours
   address: {
